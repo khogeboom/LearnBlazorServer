@@ -1,0 +1,37 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>@pageHeader</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+    private string pageHeader = "Counter";
+
+    [Parameter]
+    public int StartingValue { get; set; }
+
+    [Parameter]
+    public string PageHeader { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        currentCount = StartingValue;
+
+        if (string.IsNullOrWhiteSpace(PageHeader) == false)
+        {
+            pageHeader = PageHeader;
+        }
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

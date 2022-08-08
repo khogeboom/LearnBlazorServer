@@ -1,0 +1,21 @@
+﻿@page "/sampleform"
+
+<h3>SampleForm</h3>
+
+<EditForm Model="@sample">
+    <InputText @bind-Value="sample.SamplePassword" type="password"></InputText> <br/>
+    <InputNumber @bind-Value="sample.SampleInt"></InputNumber> <br/>
+    <InputNumber @bind-Value="sample.SampleDouble"></InputNumber> <br/>
+    <InputCheckbox @bind-Value="sample.SampleBool"></InputCheckbox> <br/>
+    <InputDate @bind-Value="sample.SampleDate"></InputDate> <br/>
+    <InputSelect @bind-Value="sample.DropDownValue">
+        <option value="">Select Item...</option>
+        <option value="1">Simple Option</option>
+        <option value="2">Complex Option</option>
+        <option value="3">Very Complex Option</option>
+    </InputSelect>
+</EditForm>
+
+@code {
+    private SampleModel sample = new SampleModel();
+}

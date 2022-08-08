@@ -1,0 +1,10 @@
+﻿
+<div>
+    <h4>@Address.AddressType</h4>
+    <p>@Address.StreetAddress</p>
+    <p>@Address.City, @Address.State  @Address.ZipCode</p>
+</div>
+@code {
+    [Parameter]
+    public AddressModel Address { get; set; }
+}

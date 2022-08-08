@@ -1,0 +1,12 @@
+﻿@page "/components"
+
+<h3>Components</h3>
+
+<!-- this will bring over the whole counter page -->
+<Counter></Counter>
+
+@for(int i = 0; i < 5; i++) {
+    <Counter></Counter>
+}
+
+<FetchData></FetchData>

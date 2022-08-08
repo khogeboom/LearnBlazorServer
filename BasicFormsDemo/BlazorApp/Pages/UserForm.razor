@@ -1,0 +1,33 @@
+﻿@page "/userform"
+
+<h3>UserForm</h3>
+
+<p>
+    @formResults
+</p>
+
+<p>
+    First Name: @person.FirstName
+</p>
+<p>
+    Last Name: @person.LastName
+</p>
+
+<EditForm Model="@person" OnValidSubmit="HandleValidSubmit">
+    <InputText id="firstName" @bind-Value="person.FirstName"></InputText>
+    <InputText id="lastName" @bind-Value="person.LastName"></InputText>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</EditForm>
+
+
+
+@code {
+    private PersonModel person = new PersonModel();
+
+    private string formResults = "";
+
+    private void HandleValidSubmit()
+    {
+        formResults = $"{person.FirstName} {person.LastName} was just created.";
+    }
+}

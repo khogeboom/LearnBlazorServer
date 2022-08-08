@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDemoWeb\\EFDemoWeb.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj",
+        "projectName": "EFDataAccessLibrary",
+        "projectPath": "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj",
+        "packagesPath": "C:\\Users\\Kasey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDataAccessLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kasey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDemoWeb\\EFDemoWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDemoWeb\\EFDemoWeb.csproj",
+        "projectName": "EFDemoWeb",
+        "projectPath": "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDemoWeb\\EFDemoWeb.csproj",
+        "packagesPath": "C:\\Users\\Kasey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDemoWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kasey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj": {
+                "projectPath": "C:\\Users\\Kasey\\source\\repos\\EFDemoWeb\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

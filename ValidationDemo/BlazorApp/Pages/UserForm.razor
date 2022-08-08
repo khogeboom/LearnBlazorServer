@@ -1,0 +1,52 @@
+﻿@page "/userform"
+
+<h3>User Form</h3>
+<h4 class="text-success">@result</h4>
+
+<EditForm Model="@person" OnValidSubmit="HandleOnValidSubmit">
+    <!-- says: go ahead and validate the model -->
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+
+    <!-- says: show the results of whatever is invalid -->
+    <ValidationSummary></ValidationSummary>
+
+    <p>
+        <label>
+            First Name: 
+            <InputText @bind-Value="person.FirstName"></InputText>
+        </label>
+    </p>
+    <p>
+        <label>
+            Last Name: 
+            <InputText @bind-Value="person.LastName"></InputText>
+        </label>
+    </p>
+    <p>
+        <label>
+            Age: 
+            <InputNumber @bind-Value="person.Age"></InputNumber>
+        </label>
+    </p>
+    <p>
+        <label>
+            Give Consent: 
+            <InputCheckbox @bind-Value="person.GaveConsent"></InputCheckbox>
+        </label>
+    </p>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+</EditForm>
+
+
+
+@code {
+    private PersonModel person = new PersonModel();
+    private string result = "";
+
+    private void HandleOnValidSubmit()
+    {
+        result = "A valid user has been created.";
+        person = new PersonModel();
+    }
+}
